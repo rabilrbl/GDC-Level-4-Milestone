@@ -12,7 +12,6 @@ COMPLETED_TASKS = []
 def add_task(request):
     task = request.GET.get('task')
     TASK.append(task)
-    print(TASK)
     return redirect('/tasks/')
 
 # Delete task from TASKS List
